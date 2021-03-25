@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Random Color Generator</title>
+		<link rel="icon" href="assets/artlogo.png" />
+
+		<!-- meta tags -->
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- link to stylesheet -->
+		<link href='styles/styles.css' rel="stylesheet">
+
+		<!-- font links -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class='center'>
+			<!-- heading/instructions -->
+			<h1 class="pangolin">Random Color Generator</h1>
+			<p>Click a color group and recieve a random color.</p>
+
+			<div class="grid-3col">
+				
+				<!--button tags for color sets -->
+				<div class="ul">
+					<div class="container">
+						<img src="assets/skin.jpg" class="img" value="Skin" id="skin" width="200" height="75">
+						<div class="centered anton"> <p>SKINS</p> </div>
+					</div>
+
+					<div class="container">
+						<img src="assets/vibrant.jpg" class="img" value="Vibrant" id="vibrant" width="200" height="75">
+						<div class="centered anton"> <p>VIBRANT</p> </div>
+					</div>
+
+					<div class="container">
+						<img src="assets/pastels.jpg" class="img" value="Pastels" id="pastels" width="200" height="75">
+						<div class="centered anton"> <p>PASTELS</p> </div>
+					</div>
+
+					<div class="container">
+						<img src="assets/roygbiv.jpg" class="img" value="ROYGBIV" id="roygbiv" width="200" height="75">
+						<div class="centered anton"> <p>ROYGBIV</p> </div>
+					</div>
+				</div> 
+
+				<!-- color box for color display -->
+				<canvas id='viewport' width="500" height="500" class="black" style='border: 5px solid black'>    </canvas>
+
+				<!-- rgb values -->
+				<div class="bebas center-vertical">
+					<h2 class="blackText">RGB Value: </h2>
+					<p id="rgb"></p>
+				</div>
+
+			</div>
+
+			<!-- connect html to js files -->
+			<script src="scripts/Logic.js"></script>
+			<script src="scripts/View.js"></script>
+			<script src="scripts/Controllers.js"></script>
+		</div>
+	</body>
+</html>
