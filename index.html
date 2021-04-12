@@ -8,6 +8,9 @@
 		<meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<!--module link-->
+		<script type='module' src="scripts/ImgurAPI.js"></script>
+		
 		<!-- link to stylesheet -->
 		<link href='styles/styles.css' rel="stylesheet">
 
@@ -55,6 +58,15 @@
 				<div class="bebas center-vertical">
 					<h2 class="blackText">RGB Value: </h2>
 					<p id="rgb"></p>
+
+					<hr>
+
+					<!-- imgur api -->
+					<h3>Used this app to create art? </h3>
+					<p>Upload your work and get a link to share it with others!</p>
+					<img src="https://i.imgur.com/jUJU4CT.jpeg" id="img" width="200" height="200">
+					<input type="file" id="file">
+					<p id="url">url:<a></a></p>
 				</div>
 
 			</div>
@@ -63,6 +75,7 @@
 			<script src="scripts/Logic.js"></script>
 			<script src="scripts/View.js"></script>
 			<script src="scripts/Controllers.js"></script>
+			<script src="scripts/ImgurAPI.js"></script>
 		</div>
 	</body>
 </html>
